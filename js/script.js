@@ -9,6 +9,25 @@ const OverlayADD = document.getElementById("postAdd");
 const form = document.getElementById("form-overlay");
 const close2 = document.getElementById("close2");
 
+// function xmlFunction(linki, gaparsuliInfoCallback) {
+//   const xml = new XMLHttpRequest();
+//   xml.open("GET", linki);
+//   xml.addEventListener("load", function () {
+//     const gaparsuliInfo = JSON.parse(this.responseText);
+
+//     gaparsuliInfoCallback(gaparsuliInfo);
+//   });
+//   xml.send();
+// }
+// xmlFunction(
+//   "https://jsonplaceholder.typicode.com/posts",
+//   function (rendomSaxeli) {
+//     rendomSaxeli.forEach((element) => {
+//       titleInfo(element);
+//     });
+//   }
+// );
+
 function fetch1(url, callback) {
   fetch(url, {
     method: "GET",
