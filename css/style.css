@@ -7,6 +7,7 @@
   background-color: yellow;
   display: none;
 }
+
 .overlay.activeOverlay {
   display: block;
 }
@@ -33,7 +34,58 @@
 }
 .pharagrap1 {
   font-size: 1.5rem;
-  color:mediumaquamarine;
+  color: mediumaquamarine;
   text-align: center;
   padding-top: 100px;
+}
+.post-add {
+  position: fixed;
+  top: 300px;
+  right: 300px;
+  max-width: 40px;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+.overlay-add {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: cadetblue;
+}
+.overlay-add.overlayInside {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close2 {
+  max-width: 40px;
+  min-height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.form1 {
+  max-width: 450px;
+  height: 30px;
+  width: 100%;
+  
+}
+.input {
+  max-width: 370px;
+  height: 30px;
+  width: 100%;
+  margin: auto;
+  border-radius: 18px;
+}
+.button {
+  min-height: 30px;
+  border-radius: 8px;
 }
