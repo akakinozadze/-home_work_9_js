@@ -89,3 +89,6 @@
   min-height: 30px;
   border-radius: 8px;
 }
+.overlay.activeOverlay .post-add{
+  display: none;
+}

@@ -83,6 +83,7 @@ function titleInfo(item) {
     fetch1(newUrlPost, function (element) {
       detInfoWamogeba(element);
     });
+    post.style.display = "none";
   });
   mainBox.appendChild(divConteiner);
   //პოსტის წაშლა ფუნქცია
@@ -116,6 +117,7 @@ function detInfoWamogeba(item) {
 close.addEventListener("click", function () {
   Overlay.classList.remove("activeOverlay");
   ContentPh.innerHTML = " ";
+  post.style.display = "block";
 });
 
 // პოსტის დამატება
