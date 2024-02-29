@@ -128,7 +128,7 @@ post.addEventListener("click", function () {
 form.addEventListener("submit", function (e) {
   e.preventDefault(); // დასაბმითების (პოსტის გაგზავნის დროს) დროს რომ არ დარესტარტდეს გვერდი
   let formSendInfo = {
-    title: e.target.value,
+    title: e.target[0].value,
     userid: 11,
   };
   fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -139,11 +139,10 @@ form.addEventListener("submit", function (e) {
     },
   })
     .then((response) => response.json())
-    .then((sendObj) => {
-      // გაგზავნას რომ დააწვება დაიხურება გვერდი
+    .then((sendObj) => {// გაგზავნას რომ დააწვება დაიხურება გვერდი
       titleInfo(sendObj); // დომში დაამატებს 101 ობიექტს (გაგზავნილი პოსტი დაემატება)
       OverlayADD.classList.remove("overlayInside");
-      sendObj.target[0].value = ""; //  გაასუფთავებს ველიუს
+      e.target[0].value = ""; //  გაასუფთავებს ველიუს
     });
 });
 // პოსტის გაგზავნის გვერდის დახურვა
