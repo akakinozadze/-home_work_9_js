@@ -143,7 +143,7 @@ form.addEventListener("submit", function (e) {
       // გაგზავნას რომ დააწვება დაიხურება გვერდი
       titleInfo(sendObj); // დომში დაამატებს 101 ობიექტს (გაგზავნილი პოსტი დაემატება)
       OverlayADD.classList.remove("overlayInside");
-      e.target[0].value = ""; //  გაასუფთავებს ველიუს
+      sendObj.target[0].value = ""; //  გაასუფთავებს ველიუს
     });
 });
 // პოსტის გაგზავნის გვერდის დახურვა
